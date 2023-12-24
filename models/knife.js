@@ -1,5 +1,4 @@
 // Require Mongoose
-const e = require('express');
 const mongoose = require('mongoose');
 
 // Define a schema
@@ -16,7 +15,6 @@ const KnifeSchema = new Schema({
 
   price: {
     type: Number,
-    required: true,
     min: [0, 'Price must be positive'],
   },
 
