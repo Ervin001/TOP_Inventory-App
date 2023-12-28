@@ -21,4 +21,4 @@ const KnifeSchema = new Schema({
   description: String,
 });
 
-modules.exports = mongoose.model('Knife', KnifeSchema);
+module.exports = mongoose.model('Knife', KnifeSchema);
