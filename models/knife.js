@@ -9,7 +9,7 @@ const KnifeSchema = new Schema({
     type: String,
     required: true,
   },
-  metal_composition: {
+  metal_name: {
     type: Schema.Types.ObjectId,
     ref: 'Metal',
     required: true,
@@ -38,19 +38,9 @@ const KnifeSchema = new Schema({
   },
 });
 
-/*
-name:  Bugout
-metal: s30v
-shape: drop point
-category: folding
-description: a lightweight folder
-price: 120
-number in stock: 5
-*/
-
 // Virtual for knife's URL
 KnifeSchema.virtual('url').get(function () {
-  // This will be needed, cannot use arrow function
+  // 'This' will be needed, cannot use arrow function
   return `/catalog/knife/${this._id}`;
 });
 
