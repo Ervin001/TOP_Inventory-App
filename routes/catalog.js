@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 // Require controller modules.
-const knife_controller = require('../controllers/knife_controller');
+const knife_controller = require('../controllers/knifeController');
 
 // Knife routes //
 
@@ -53,44 +53,44 @@ router.get('/knives', knife_controller.knife_list);
 
 /// KNIFETYPE ROUTES ///
 
-// GET request for creating a knife_type. NOTE This must come before route that displays knife_type (uses id).
-router.get('/knife_type/create', (req, res) => {
-  res.send('NOT IMPLEMENTED: knife_type create GET');
+// GET request for creating a knifetype. NOTE This must come before route that displays knifetype (uses id).
+router.get('/knifetype/create', (req, res) => {
+  res.send('NOT IMPLEMENTED: knifetype create GET');
 });
 
-//POST request for creating knife_type.
-router.post('/knife_type/create', (req, res) => {
-  res.send('NOT IMPLEMENTED: knife_type create POST');
+//POST request for creating knifetype.
+router.post('/knifetype/create', (req, res) => {
+  res.send('NOT IMPLEMENTED: knifetype create POST');
 });
 
-// GET request to delete knife_type.
-router.get('/knife_type/:id/delete', (req, res) => {
-  res.send('NOT IMPLEMENTED: knife_type delete GET');
+// GET request to delete knifetype.
+router.get('/knifetype/:id/delete', (req, res) => {
+  res.send('NOT IMPLEMENTED: knifetype delete GET');
 });
 
-// POST request to delete knife_type.
-router.post('/knife_type/:id/delete', (req, res) => {
-  res.send('NOT IMPLEMENTED: knife_type delete POST');
+// POST request to delete knifetype.
+router.post('/knifetype/:id/delete', (req, res) => {
+  res.send('NOT IMPLEMENTED: knifetype delete POST');
 });
 
-// GET request to update knife_type.
-router.get('/knife_type/:id/update', (req, res) => {
-  res.send('NOT IMPLEMENTED: knife_type update GET');
+// GET request to update knifetype.
+router.get('/knifetype/:id/update', (req, res) => {
+  res.send('NOT IMPLEMENTED: knifetype update GET');
 });
 
-// POST request to update knife_type.
-router.post('/knife_type/:id/update', (req, res) => {
-  res.send('NOT IMPLEMENTED: knife_type update POST');
+// POST request to update knifetype.
+router.post('/knifetype/:id/update', (req, res) => {
+  res.send('NOT IMPLEMENTED: knifetype update POST');
 });
 
-// GET request for one knife_type.
-router.get('/knife_type/:id', (req, res) => {
-  res.send('NOT IMPLEMENTED: knife_type detail');
+// GET request for one knifetype.
+router.get('/knifetype/:id', (req, res) => {
+  res.send('NOT IMPLEMENTED: knifetype detail');
 });
 
-// GET request for list of all knife_type.
-router.get('/knife_types', (req, res) => {
-  res.send('NOT IMPLEMENTED: knife_type list');
+// GET request for list of all knifetype.
+router.get('/knifetypes', (req, res) => {
+  res.send('NOT IMPLEMENTED: knifetype list');
 });
 
 /// KNIFEINSTANCE ROUTES ///
